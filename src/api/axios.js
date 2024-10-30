@@ -4,7 +4,7 @@ const instance = axios.create({
   baseURL: process.env.NEXT_PUBLIC_API_BASE_URL,
   headers: {
     'Accept':'application/json',
-    'Authorization': 'Bearer 2|TsuWjopNFlmCaoCYkAVYYVt9sP9qRSdqNwa4nnhC28c8d331'
+    // 'Authorization': 'Bearer 2|TsuWjopNFlmCaoCYkAVYYVt9sP9qRSdqNwa4nnhC28c8d331'
   },
 });
 
@@ -16,9 +16,9 @@ instance.interceptors.request.use(
     if (token) {
       config.headers['Authorization'] = `Bearer ${token}`;
     }
-    if (config.url != '/login' || config.url != '/register') {
-        config.withCredentials = true;
-    }
+    // if (config.url != '/login' || config.url != '/register') {
+    //     config.withCredentials = true;
+    // }
     return config;
   },
   (error) => Promise.reject(error)
