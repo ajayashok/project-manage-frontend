@@ -16,7 +16,16 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+You can open the login page
+    1. Configure the backend api url on .env.local file
+    2. run the project
+    3. Click on the register link
+    4. Register User
+    5. Then login the portal
+    6. Open the dashboard page to shows the products analytics and product import panel
+    7. Download the sample file
+    8. Add the products list to the sample file and upload thrgh the portal
+    9. Below table shows the products list 
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
